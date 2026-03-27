@@ -4,6 +4,8 @@
  */
 package Model;
 
+import java.sql.Date;
+
 /**
  *
  * @author XPS
@@ -14,10 +16,10 @@ public class HoaDon {
     private String tenkh;
     private String sdt;
     private String trangThai;
-    private String ngayTao;
-    private float tongTien;
-    private float tienTra;
-    private float tienThua;
+    private Date ngayTao;
+    private double tongTien;
+    private double tienTra;
+    private double tienThua;
     private String thanhToan;
     private String giaoHang;
     private String ghiChu;
@@ -25,7 +27,29 @@ public class HoaDon {
     public HoaDon() {
     }
 
-    public HoaDon(String mahd, String Manv, String tenkh, String sdt, String trangThai, String ngayTao, float tongTien, float tienTra, float tienThua, String thanhToan, String giaoHang, String ghiChu) {
+    public HoaDon(String mahd, String Manv, String trangThai, Date ngayTao, String ghiChu) {
+        this.mahd = mahd;
+        this.Manv = Manv;
+        this.trangThai = trangThai;
+        this.ngayTao = ngayTao;
+        this.ghiChu = ghiChu;
+    }
+
+    public HoaDon(String mahd, String tenkh, String sdt, double tongTien, double tienTra, double tienThua, String thanhToan, String giaoHang, String ghiChu) {
+        this.mahd = mahd;
+        this.tenkh = tenkh;
+        this.sdt = sdt;
+        this.tongTien = tongTien;
+        this.tienTra = tienTra;
+        this.tienThua = tienThua;
+        this.thanhToan = thanhToan;
+        this.giaoHang = giaoHang;
+        this.ghiChu = ghiChu;
+    }
+    
+    
+
+    public HoaDon(String mahd, String Manv, String tenkh, String sdt, String trangThai, Date ngayTao, double tongTien, double tienTra, double tienThua, String thanhToan, String giaoHang, String ghiChu) {
         this.mahd = mahd;
         this.Manv = Manv;
         this.tenkh = tenkh;
@@ -80,35 +104,35 @@ public class HoaDon {
         this.trangThai = trangThai;
     }
 
-    public String getNgayTao() {
+    public Date getNgayTao() {
         return ngayTao;
     }
 
-    public void setNgayTao(String ngayTao) {
+    public void setNgayTao(Date ngayTao) {
         this.ngayTao = ngayTao;
     }
 
-    public float getTongTien() {
+    public double getTongTien() {
         return tongTien;
     }
 
-    public void setTongTien(float tongTien) {
+    public void setTongTien(double tongTien) {
         this.tongTien = tongTien;
     }
 
-    public float getTienTra() {
+    public double getTienTra() {
         return tienTra;
     }
 
-    public void setTienTra(float tienTra) {
+    public void setTienTra(double tienTra) {
         this.tienTra = tienTra;
     }
 
-    public float getTienThua() {
+    public double getTienThua() {
         return tienThua;
     }
 
-    public void setTienThua(float tienThua) {
+    public void setTienThua(double tienThua) {
         this.tienThua = tienThua;
     }
 
@@ -135,6 +159,7 @@ public class HoaDon {
     public void setGhiChu(String ghiChu) {
         this.ghiChu = ghiChu;
     }
-
-  
+    
+    
+    
 }
