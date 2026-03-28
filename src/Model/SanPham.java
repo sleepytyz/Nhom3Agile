@@ -9,6 +9,7 @@ package Model;
  * @author XPS
  */
 public class SanPham {
+
     private String masp;
     private String tensp;
     private String loaisp;
@@ -18,9 +19,20 @@ public class SanPham {
     private String kichThuoc;
     private String chatLieu;
     private String trangThai;
+    private byte[] hinhAnh;
 
     public SanPham() {
     }
+
+    public SanPham(String masp, String tensp, float gia, int sluong, byte[] hinhAnh) {
+        this.masp = masp;
+        this.tensp = tensp;
+        this.gia = gia;
+        this.sluong = sluong;
+        this.hinhAnh = hinhAnh;
+    }
+    
+    
     
 
     public SanPham(String masp, String tensp, String loaisp, float gia, int sluong, String mausac, String kichThuoc, String chatLieu, String trangThai) {
@@ -33,6 +45,19 @@ public class SanPham {
         this.kichThuoc = kichThuoc;
         this.chatLieu = chatLieu;
         this.trangThai = trangThai;
+    }
+
+    public SanPham(String masp, String tensp, String loaisp, float gia, int sluong, String mausac, String kichThuoc, String chatLieu, String trangThai, byte[] hinhAnh) {
+        this.masp = masp;
+        this.tensp = tensp;
+        this.loaisp = loaisp;
+        this.gia = gia;
+        this.sluong = sluong;
+        this.mausac = mausac;
+        this.kichThuoc = kichThuoc;
+        this.chatLieu = chatLieu;
+        this.trangThai = trangThai;
+        this.hinhAnh = hinhAnh;
     }
 
     public String getMasp() {
@@ -107,5 +132,14 @@ public class SanPham {
         this.trangThai = trangThai;
     }
 
+    public byte[] getHinhAnh() {
+        return hinhAnh;
+    }
+
+    public void setHinhAnh(byte[] hinhAnh) {
+        this.hinhAnh = hinhAnh;
+    }
     
+    
+
 }
