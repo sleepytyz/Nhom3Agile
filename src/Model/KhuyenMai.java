@@ -4,48 +4,51 @@
  */
 package Model;
 
+import java.util.Date;
+
 /**
  *
  * @author XPS
  */
 public class KhuyenMai {
-    private String maKH;
-    private String masp;
+
+    private String maKM;
     private String tenKm;
-    private String ngayBdau;
-    private String ngayKthuc;
-    private String loaiSp;
+    private Date ngayBdau;
+    private Date ngayKthuc;
+    private String loaisp;
     private float giamgia;
     private String trangThai;
 
     public KhuyenMai() {
     }
 
-    public KhuyenMai(String maKH, String masp, String tenKm, String ngayBdau, String ngayKthuc, String loaiSp, float giamgia, String trangThai) {
-        this.maKH = maKH;
-        this.masp = masp;
+    public KhuyenMai(String maKM, String tenKm, Date ngayBdau, Date ngayKthuc, String loaisp, float giamgia, String trangThai) {
+        this.maKM = maKM;
         this.tenKm = tenKm;
         this.ngayBdau = ngayBdau;
         this.ngayKthuc = ngayKthuc;
-        this.loaiSp = loaiSp;
+        this.loaisp = loaisp;
         this.giamgia = giamgia;
         this.trangThai = trangThai;
     }
 
-    public String getMaKH() {
-        return maKH;
+    public String getLoaisp() {
+        return loaisp;
     }
 
-    public void setMaKH(String maKH) {
-        this.maKH = maKH;
+    public void setLoaisp(String loaisp) {
+        this.loaisp = loaisp;
     }
 
-    public String getMasp() {
-        return masp;
+    
+
+    public String getMaKM() {
+        return maKM;
     }
 
-    public void setMasp(String masp) {
-        this.masp = masp;
+    public void setMaKM(String maKM) {
+        this.maKM = maKM;
     }
 
     public String getTenKm() {
@@ -56,28 +59,20 @@ public class KhuyenMai {
         this.tenKm = tenKm;
     }
 
-    public String getNgayBdau() {
+    public Date getNgayBdau() {
         return ngayBdau;
     }
 
-    public void setNgayBdau(String ngayBdau) {
+    public void setNgayBdau(Date ngayBdau) {
         this.ngayBdau = ngayBdau;
     }
 
-    public String getNgayKthuc() {
+    public Date getNgayKthuc() {
         return ngayKthuc;
     }
 
-    public void setNgayKthuc(String ngayKthuc) {
+    public void setNgayKthuc(Date ngayKthuc) {
         this.ngayKthuc = ngayKthuc;
-    }
-
-    public String getLoaiSp() {
-        return loaiSp;
-    }
-
-    public void setLoaiSp(String loaiSp) {
-        this.loaiSp = loaiSp;
     }
 
     public float getGiamgia() {
@@ -97,4 +92,5 @@ public class KhuyenMai {
     }
     
     
+
 }
