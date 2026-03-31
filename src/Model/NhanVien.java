@@ -4,6 +4,8 @@
  */
 package Model;
 
+import java.sql.Date;
+
 /**
  *
  * @author XPS
@@ -17,12 +19,12 @@ public class NhanVien {
     private String diaChi;
     private String gioitinh;
     private String trangThai;
-    private String ngaySinh;
+    private Date ngaySinh;
 
     public NhanVien() {
     }
 
-    public NhanVien(String manv, String tennv, String sdt, String vaitro, String email, String diaChi, String gioitinh, String trangThai, String ngaySinh) {
+    public NhanVien(String manv, String tennv, String sdt, String vaitro, String email, String diaChi, String gioitinh, String trangThai, Date ngaySinh) {
         this.manv = manv;
         this.tennv = tennv;
         this.sdt = sdt;
@@ -98,13 +100,13 @@ public class NhanVien {
         this.trangThai = trangThai;
     }
 
-    public String getNgaySinh() {
+    public Date getNgaySinh() {
         return ngaySinh;
     }
 
-    public void setNgaySinh(String ngaySinh) {
+    public void setNgaySinh(Date ngaySinh) {
         this.ngaySinh = ngaySinh;
     }
 
-   
+
 }

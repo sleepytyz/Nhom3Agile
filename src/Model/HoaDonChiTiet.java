@@ -9,6 +9,7 @@ package Model;
  * @author XPS
  */
 public class HoaDonChiTiet {
+    private String macthd;
     private String mahd;
     private String masp;
     private String tensp;
@@ -16,11 +17,14 @@ public class HoaDonChiTiet {
     private float dongia;
     private float giamGia;
     private float thanhTien;
+    private String trangthai;
+    private String gchu;
 
     public HoaDonChiTiet() {
     }
 
-    public HoaDonChiTiet(String mahd, String masp, String tensp, int sluong, float dongia, float giamGia, float thanhTien) {
+    public HoaDonChiTiet(String macthd, String mahd, String masp, String tensp, int sluong, float dongia, float giamGia, float thanhTien) {
+        this.macthd = macthd;
         this.mahd = mahd;
         this.masp = masp;
         this.tensp = tensp;
@@ -28,6 +32,27 @@ public class HoaDonChiTiet {
         this.dongia = dongia;
         this.giamGia = giamGia;
         this.thanhTien = thanhTien;
+    }
+
+    public HoaDonChiTiet(String macthd, String mahd, String masp, String tensp, int sluong, float dongia, float giamGia, float thanhTien, String trangthai, String gchu) {
+        this.macthd = macthd;
+        this.mahd = mahd;
+        this.masp = masp;
+        this.tensp = tensp;
+        this.sluong = sluong;
+        this.dongia = dongia;
+        this.giamGia = giamGia;
+        this.thanhTien = thanhTien;
+        this.trangthai = trangthai;
+        this.gchu = gchu;
+    }
+
+    public String getMacthd() {
+        return macthd;
+    }
+
+    public void setMacthd(String macthd) {
+        this.macthd = macthd;
     }
 
     public String getMahd() {
@@ -85,5 +110,23 @@ public class HoaDonChiTiet {
     public void setThanhTien(float thanhTien) {
         this.thanhTien = thanhTien;
     }
+    public String getTrangthai() {
+        return trangthai;
+    }
+
+    public void setTrangthai(String trangthai) {
+        this.trangthai = trangthai;
+    }
+
+    public String getGchu() {
+        return gchu;
+    }
+
+    public void setGchu(String gchu) {
+        this.gchu = gchu;
+    }
+    
+
+    
     
 }
